@@ -9,10 +9,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  width: 550px;
 }
 
 .navbar {
   width: 100%;
+  height: 55px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,8 +26,49 @@ body {
   background-color: #f55a5a;
   color: white;
 }
+.nav-title {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.destination-card {
+  display: flex;
+  margin: 40px;
+}
 
 .image {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+.info-section {
+  margin-left: 20px;
+  font-size: 10.24px;
+  color: #2b283a;
+}
+.g-maps {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.map-link {
+  color: #918e9b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.country {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  margin: 10px 15px 10px 5px;
+  letter-spacing: 1px;
+}
+.destination-title {
+  font-size: 25px;
+}
+.dates {
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+.description {
+  line-height: 15px;
 }
