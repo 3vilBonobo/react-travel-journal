@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Destination from './components/Destination';
 import './App.css';
+import data from './data.js';
 
-function App() {
+const App = () => {
+  const destinationList = data.map((item) => {
+    return <Destination key={item.id} item={item} />;
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      {destinationList}
     </div>
   );
-}
+};
 
 export default App;
