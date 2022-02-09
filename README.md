@@ -1,5 +1,5 @@
 # Travel Journal
 
-Small React project from Scrimba's [Scrimba's](https://scrimba.com/learn/learnreact).
+Small React project from Scrimba's [Learn React for free](https://scrimba.com/learn/learnreact) course.
 
 View the project here:
